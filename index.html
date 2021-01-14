@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>
+Aslam's Site
+</title>
+</head>
+<button onclick = "pageSkin()" id = "modebutton"> Dark Mode</button>
+<body id = "theme" style = "background-color:white;color:black">
+<h1>About Us</h1>
+This is the Site of Aslam and Goutham
+<h1>More About Us</h1>
+<footer>
+Goutham and Aslam Site Copyright @ 2020
+</footer>
+<script>
+var onoff = true;
+function pageSkin() {
+if (onoff == true){
+document.getElementById("theme").style.backgroundColor = "black";
+document.getElementById("theme").style.color = "white"
+document.getElementById("modebutton").innerHTML = "Light Mode";
+onoff = false
+} else {
+document.getElementById("theme").style.backgroundColor = "white";
+document.getElementById("theme").style.color = "black"
+document.getElementById("modebutton").innerHTML = "Dark Mode";
+onoff = true
+}
+}
+</script>
+</body>
+
+</html>
